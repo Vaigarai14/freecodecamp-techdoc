@@ -81,7 +81,7 @@ code {
 
     #hr h3 a {
         /* color: red; */
-        font-size: 0.4em;
+        font-size: 0.7em;
     }
 
     /* #hr h3 {
@@ -97,7 +97,7 @@ code {
     section #overflow {
         /* color: red; */
         /* background-color: aquamarine; */
-        width: 85%;
+        width: 90%;
         height: auto;
         border-left: 2px solid var(--secoundcolor);
         overflow-x: none;
