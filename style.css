@@ -81,12 +81,14 @@ code {
 
     #hr h3 a {
         /* color: red; */
-        font-size: 0.7em;
+        font-size: 0.5em;
+        color: black;
     }
 
-    /* #hr h3 {
-        /* background-color: black; */
-    /* } */
+    #hr h3 {
+        /* background-color: azure; */
+        width: max-content;
+    }
 
     #navbar #hr {
         border: 2px rgb(113, 242, 0);
