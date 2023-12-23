@@ -10,11 +10,15 @@ body {
     --secoundcolor: rgb(68, 67, 67);
 }
 
-
+#title>h1 {
+    text-align: center;
+    font-weight: bolder;
+}
 
 #main-doc {
     display: flex;
     justify-content: center;
+    width: fit-content;
 }
 
 #main-doc #navbar {
@@ -25,28 +29,27 @@ body {
 
 #navbar div {
     overflow-y: scroll;
-    height: 40em;
+    height: 35em;
 }
 
 #navbar h3 a {
     text-decoration: none;
     color: var(--secoundcolor);
     font-weight: 200;
+    margin: 1em;
 }
 
 #overflow {
     overflow-x: hidden;
-    width: 100%;
+    width: fit-content;
     height: 40em;
     padding: 0.5em;
-    margin: 2 4em;
 }
 
 #overflow header h1,
 #navbar h1 {
     font-size: 1.9em;
-    font-size: 1.9em;
-    font-weight: lighter;
+    font-weight: 500;
 }
 
 #overflow p,
@@ -69,13 +72,31 @@ code {
 
 
 @media screen and (max-width: 600px) {
+
+    
+#title>h1 {
+    text-align: center;
+    font-weight: bolder;
+    margin: 1em;
+}
     #main-doc {
         display: unset;
+        font-size: smaller;
     }
 
     #navbar div {
-        overflow-y: scroll;
+        overflow: scroll;
         height:20em;
-        width:34em;
+        width: 34em;
     }
+    #main-doc #navbar {
+        padding: 0 0.5em;
+        width: 80%;
+        text-align: left;
+    }
+
+#overflow header h1,
+#navbar h1 {
+    font-size: large;
+}
 }
