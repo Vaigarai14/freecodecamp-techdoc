@@ -18,12 +18,10 @@ body {
 #main-doc {
     display: flex;
     justify-content: center;
-    width: fit-content;
 }
 
 #main-doc #navbar {
     padding: 0 0.5em;
-    width: 100%;
     text-align: left;
 }
 
@@ -36,7 +34,7 @@ body {
     text-decoration: none;
     color: var(--secoundcolor);
     font-weight: 200;
-    margin: 1em;
+    padding: 0.2em;
 }
 
 #overflow {
@@ -85,11 +83,6 @@ code {
         color: black;
     }
 
-    /* #hr h3 {
-        /* background-color: azure; */
-        /* width: max-content; */
-    /* } */ 
-
     #navbar #hr {
         border: 2px rgb(113, 242, 0);
         overflow: hidden;
@@ -99,12 +92,11 @@ code {
     section #overflow {
         /* color: red; */
         /* background-color: aquamarine; */
-        width: 90%;
         height: auto;
         border-left: 2px solid var(--secoundcolor);
         overflow-x: none;
         font-size: x-small;
-        color:black;
+        color: black;
     }
 
     #overflow header h1,
