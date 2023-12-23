@@ -85,10 +85,10 @@ code {
         color: black;
     }
 
-    #hr h3 {
+    /* #hr h3 {
         /* background-color: azure; */
-        width: max-content;
-    }
+        /* width: max-content; */
+    /* } */ 
 
     #navbar #hr {
         border: 2px rgb(113, 242, 0);
@@ -103,11 +103,13 @@ code {
         height: auto;
         border-left: 2px solid var(--secoundcolor);
         overflow-x: none;
+        font-size: x-small;
+        color:black;
     }
 
     #overflow header h1,
     #navbar h1 {
-        font-size: medium;
+        font-size: small;
         /* color: orangered; */
     }
 
