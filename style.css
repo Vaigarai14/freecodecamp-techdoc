@@ -71,32 +71,34 @@ code {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
 
-    
-#title>h1 {
-    text-align: center;
-    font-weight: bolder;
-    margin: 1em;
-}
+    #title h1 {
+        width: 100%;
+        text-align: center;
+        font-weight: bolder;
+        margin: 1em;
+    }
+
     #main-doc {
         display: unset;
         font-size: smaller;
     }
 
     #navbar div {
-        overflow: scroll;
-        height:20em;
-        width: 34em;
+        /* overflow: scroll; */
+        height:15em;
+        width: 35em;
     }
+
     #main-doc #navbar {
         padding: 0 0.5em;
         width: 80%;
         text-align: left;
     }
 
-#overflow header h1,
-#navbar h1 {
-    font-size: large;
-}
+    #overflow header h1,
+    #navbar h1 {
+        font-size: large;
+    }
 }
