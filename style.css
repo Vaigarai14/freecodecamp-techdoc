@@ -10,13 +10,15 @@ body {
     --secoundcolor: rgb(68, 67, 67);
 }
 
+
+
 #main-doc {
     display: flex;
     justify-content: center;
 }
 
 #main-doc #navbar {
-    padding: 0 1em;
+    padding: 0 0.5em;
     width: 80%;
     text-align: left;
 }
@@ -24,10 +26,6 @@ body {
 #navbar div {
     overflow-y: scroll;
     height: 40em;
-}
-
-#navbar h3 {
-    padding: 0.5em 1em;
 }
 
 #navbar h3 a {
@@ -65,7 +63,8 @@ code {
 
 #overflow li,
 code {
-    margin-left: 2.5em;
+    margin-left: 3.5em;
+    list-style-type: circle;
 }
 
 
