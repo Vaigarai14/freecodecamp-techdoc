@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+
+:root {
+    font-family: 'Arial';
+}
+
+#main-doc {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar {
+    padding: 0 1em;
+    overflow: scroll;
+    width: 110em;
+}
+
+#navbar h3 {
+    padding: 1em;
+    margin:0.5em;
+}
+
+#navbar h3 a {
+    text-decoration: none;
+}
+
+#main-section {
+    overflow: scroll;
+}
