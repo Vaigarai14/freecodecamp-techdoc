@@ -9,23 +9,25 @@
 
 <body>
     <main id="main-doc">
-        <!-- <nav id = "navbar">
+        <nav id="navbar">
+            <header>
                 <h1>Js Documentation</h1>
-                <h3><a href="#">Introduction</a></h3>
-                <h3><a href="#">What you should already know</a></h3>
-                <h3><a href="#">JavaScript and Java</a></h3>
-                <h3><a href="#">Hello World</a></h3>
-                <h3><a href="#">Variables</a></h3>
-                <h3><a href="#">Declaring Variables</a></h3>
-                <h3><a href="#">Varibles scope</a></h3>
-                <h3><a href="#">Global scope</a></h3>
-                <h3><a href="#">Constants</a></h3>
-                <h3><a href="#">Data Types</a>
-                    <h3><a href="#">If....else statement</a></h3>
-                    <h3><a href="#">While statement</a></h3>
-                    <h3><a href="#">Function declarations</a></h3>
-                    <h3><a href="#">Reference </a></h3>
-                </nav> -->
+            </header>
+            <h3><a class="nav-link" href="Introduction">Introduction</a></h3>
+            <h3><a class="nav-link" href="What_you_should_already_know">What you should already know</a></h3>
+            <h3><a class="nav-link" href="JavaScript_and_Java">JavaScript and Java</a></h3>
+            <h3><a class="nav-link" href="Hello_world">Hello World</a></h3>
+            <h3><a class="nav-link" href="Variables">Variables</a></h3>
+            <h3><a class="nav-link" href="Declaring_Variables">Declaring Variables</a></h3>
+            <h3><a class="nav-link" href="Varibles_scope">Varibles scope</a></h3>
+            <h3><a class="nav-link" href="Global_scope">Global scope</a></h3>
+            <h3><a class="nav-link" href="Constants">Constants</a></h3>
+            <h3><a class="nav-link" href="Data_Types">Data Types</a>
+                <h3><a class="nav-link" href="If_else_statement">If else statement</a></h3>
+                <h3><a class="nav-link" href="While_statement">While statement</a></h3>
+                <h3><a class="nav-link" href="Function_declarations">Function declarations</a></h3>
+                <h3><a class="nav-link" href="Reference">Reference </a></h3>
+        </nav>
         <section class="main-section" id="Introduction">
             <header>Introduction</header>
             <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight
@@ -77,8 +79,8 @@
             <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript
                 code:
             </p>
-            <p>function greetMe(yourName) { alert("Hello " + yourName); }
-                greetMe("World");</p>
+            <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                greetMe("World");</code>
             <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
 
         </section>
@@ -97,14 +99,14 @@
             <header>Declaring Variables</header>
             <p>You can declare a variable in three ways:</p>
             <p>With the keyword var. For example,</p>
-            <p>var x = 42.</p>
+            <code>var x = 42.</code>
             <p>This syntax can be used to declare both local and global variables.</p>
             <p>By simply assigning it a value. For example,</p>
-            <p>x = 42.</p>
+            <code>x = 42.</code>
             <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this
                 variant.</p>
             <p>With the keyword let. For example,</p>
-            <p>let y = 13.</p>
+            <code>let y = 13.</code>
             <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
         </section>
         <section class="main-section" id="Varibles_scope">
@@ -116,10 +118,10 @@
                 a block is local to the function (or global scope) that the block resides within. For example the
                 following code will log 5, because the scope of x is the function (or global context) within which x is
                 declared, not the block, which in this case is an if statement.</p>
-            <p>if (true) { var x = 5; } console.log(x); // 5</p>
+            <code>if (true) { var x = 5; } console.log(x); // 5</code>
             <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
-            <p>if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-                not defined</p>
+            <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+                not defined</code>
         </section>
         <section class="main-section" id="Global_scope">
             <header>Global scope</header>
@@ -134,20 +136,20 @@
             <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is
                 the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can
                 contain alphabetic, numeric, or underscore characters.</p>
-            <p>const PI = 3.14;</p>
+            <code>const PI = 3.14;</code>
             <p>A constant cannot change value through assignment or be re-declared while the script is running. It has
                 to be initialized to a value.</p>
             <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword
                 is omitted, the identifier is assumed to represent a variable.</p>
             <p>You cannot declare a constant with the same name as a function or variable in the same scope. For
                 example:</p>
-            <li>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+            <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
                 WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-                //statements }</li>
+                //statements }</code>
             <p>However, object attributes are not protected, so the following statement is executed without problems.
             </p>
-            <li>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-                "otherValue";</li>
+            <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+                "otherValue";</code>
         </section>
         <section class="main-section" id="Data_types">
             <header>Data Types</header>
@@ -170,38 +172,38 @@
                 perform.</p>
         </section>
         <section class="main-section" id="If_else_statement">
-            <header>If....else statement</header>
+            <header>If else statement</header>
             <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause
                 to execute a statement if the condition is false. An if statement looks as follows:</p>
-            <li>if (condition) { statement_1; } else { statement_2; }</li>
+            <code>if (condition) { statement_1; } else { statement_2; }</code>
             <p>condition can be any expression that evaluates to true or false. See Boolean for an explanation of what
                 evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise,
                 statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if
                 statements.</p>
             <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as
                 follows:</p>
-            <li>if (condition_1) { statement_1; } else if (condition_2) {
+            <code>if (condition_1) { statement_1; } else if (condition_2) {
                 statement_2; } else if (condition_n) { statement_n; } else {
-                statement_last; }</li>
+                statement_last; }</code>
             <p>In the case of multiple conditions only the first logical condition which evaluates to true will be
                 executed. To execute multiple statements, group them within a block statement ({ ... }) . In general,
                 it's good practice to always use block statements, especially when nesting if statements:</p>
-            <li>if (condition) { statement_1_runs_if_condition_is_true;
+            <code>if (condition) { statement_1_runs_if_condition_is_true;
                 statement_2_runs_if_condition_is_true; } else {
                 statement_3_runs_if_condition_is_false;
-                statement_4_runs_if_condition_is_false; }</li>
+                statement_4_runs_if_condition_is_false; }</code>
             <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be
                 confused with equality when glancing over the code. For example, do not use the following code:</p>
-            <li>if (x = y) { /* statements here */ }</li>
+            <code>if (x = y) { /* statements here */ }</code>
             <p>If you need to use an assignment in a conditional expression, a common practice is to put additional
                 parentheses around the assignment. For example:</p>
-            <li>if ((x = y)) { /* statements here */ }</li>
+            <code>if ((x = y)) { /* statements here */ }</code>
         </section>
         <section class="main-section" id="While_statement">
             <header>While statement</header>
             <p>A while statement executes its statements as long as a specified condition evaluates to true. A while
                 statement looks as follows:</p>
-            <li>while (condition) statement</li>
+            <code>while (condition) statement</code>
             <p>If the condition becomes false, statement within the loop stops executing and control passes to the
                 statement following the loop.</p>
             <p>The condition test occurs before statement in the loop is executed. If the condition returns true,
@@ -210,16 +212,15 @@
             <p>To execute multiple statements, use a block statement ({ ... }) to group those statements.</p>
             <p>Example:</p>
             <p>The following while loop iterates as long as n is less than three:</p>
-            <li>var n = 0; var x = 0; while (n < 3) { n++; x +=n; }</li>
-                    <p>With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on
-                        the following values:</p>
-                    <ul>
-                        <li>After the first pass: n = 1 and x = 1</li>
-                        <li>After the second pass: n = 2 and x = 3</li>
-                        <li>After the third pass: n = 3 and x = 6</li>
-                    </ul>
-                    <p>After completing the third pass, the condition n < 3 is no longer true, so the loop
-                            terminates.</p>
+            <code>var n = 0; var x = 0; while (n < 3) { n++; x +=n; }</code>
+            <p>With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on
+                the following values:</p>
+            <ul>
+                <li>After the first pass: n = 1 and x = 1</li>
+                <li>After the second pass: n = 2 and x = 3</li>
+                <li>After the third pass: n = 3 and x = 6</li>
+            </ul>
+            <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
         </section>
         <section class="main-section" id="Function_declarations">
             <header>Function declarations</header>
@@ -231,11 +232,11 @@
                 <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
             </ul>
             <p>For example, the following code defines a simple function named square:</p>
-            <li>function square(number) { return number * number; }</li>
+            <code>function square(number) { return number * number; }</code>
             <p>The function square takes one argument, called number. The function consists of one statement that says
                 to return the argument of the function (that is, number) multiplied by itself. The return statement
                 specifies the value returned by the function.</p>
-            <li>return number * number;</li>
+            <code>return number * number;</code>
             <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the
                 function, but if the function changes the value of the parameter, this change is not reflected globally
                 or in the calling function.</p>
