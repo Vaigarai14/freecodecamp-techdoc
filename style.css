@@ -85,9 +85,9 @@ code {
         font-size: small;
     }
 
-    #hr h3 {
+    /* #hr h3 {
         /* background-color: black; */
-    }
+    /* } */ 
 
     #navbar #hr {
         border: 2px rgb(113, 242, 0);
